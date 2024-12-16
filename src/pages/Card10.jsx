@@ -41,8 +41,12 @@ const DetailSection = () => {
                 className='btn btn-outline-dark flex-shrink-0'
                 type='button'
               >
-                <i className='bi-cart-fill me-1'></i>
-                Add to cart
+                 <a
+                  className='bi-cart-fill me-1 list-group-item'
+                  href='https://t.me/napishupopoje'
+                >
+                  Add to cart
+                </a>
               </button>
             </div>
           </div>
