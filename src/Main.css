@@ -1,0 +1,7 @@
+/* 490px yoki undan kichik ekranlar uchun */
+@media (max-width: 490px) {
+    .row-cols-custom {
+      grid-template-columns: 1fr !important;
+    }
+  }
+  
