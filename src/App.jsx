@@ -12,7 +12,6 @@ import img10 from '../src/img/IMG_5528.JPG'
 import img11 from '../src/img/IMG_5553.JPG'
 import img12 from '../src/img/IMG_5554.JPG'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import Css from '../src/Main.css'
 
 import Card1 from './pages/Card1'
 import Card2 from './pages/Card2'
@@ -54,14 +53,14 @@ function App () {
 function Base () {
   return (
     <div>
-      <Navbar />
+      <Navbar isBack={true} />
 
       <ControlledCarousel />
 
-      <section className='py-5'>
+      <section style={{ backgroundColor: '' }} className='py-5'>
         <div className='container px-4 px-lg-5 mt-5'>
           <div
-            className='row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center'
+            className='row gx-4 g-4 g-md-4 g-lg-5 justify-content-center'
             id='productWrapper'
           >
             {/* Sample Product Card */}
@@ -97,7 +96,7 @@ function Base () {
 
 function Card (props) {
   return (
-    <div className='col mb-5'>
+    <div className='col-12 col-sm-6 col-md-4 col-lg-3'>
       <div className='card h-100'>
         <img
           className='card-img-top h-50 object-fit-cover'

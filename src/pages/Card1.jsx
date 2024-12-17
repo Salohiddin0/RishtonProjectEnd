@@ -13,10 +13,20 @@ const App = () => {
   )
 }
 
-const DetailSection = () => {
-
+const DetailSection = (props) => {
   return (
     <section className='py-5'>
+      <button style={{marginLeft: '150px'}} className='btn btn-dark'>
+        {!props.isBack && (
+          <a
+            style={{ fontFamily: 'monospace', fontSize: '20px' }}
+            className='nav-link'
+            href='/'
+          >
+            Back
+          </a>
+        )}
+      </button>
       <div className='container px-4 px-lg-5 my-5'>
         <div id='detailWrap' className='row gx-4 gx-lg-5 align-items-center'>
           <div className='col-md-6'>
@@ -44,8 +54,11 @@ const DetailSection = () => {
               className='btn btn-outline-dark flex-shrink-0'
               type='button'
             >
-              <a className='bi-cart-fill me-1 list-group-item' href='https://t.me/napishupopoje'>
-              Add to cart
+              <a
+                className='bi-cart-fill me-1 list-group-item'
+                href='https://t.me/napishupopoje'
+              >
+                Add to cart
               </a>
             </button>
           </div>
