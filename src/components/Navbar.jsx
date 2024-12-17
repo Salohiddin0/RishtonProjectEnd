@@ -4,7 +4,7 @@ const Navbar = props => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-light'>
       <div className='container px-4 px-lg-5'>
-        <a className='navbar-brand' href='http://localhost:3000/'>
+        <a className='navbar-brand' href='http://localhost:3001/'>
           Usmanov Ceramics
         </a>
         <button
@@ -38,12 +38,10 @@ const Navbar = props => {
                 instagram
               </a>
             </li>
-            
           </ul>
         </div>
       </div>
     </nav>
-    
   )
 }
 

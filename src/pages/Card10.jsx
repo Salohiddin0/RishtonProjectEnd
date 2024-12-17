@@ -4,24 +4,37 @@ import img10 from '../img/IMG_5528.JPG'
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 
-const DetailSection = () => {
-  const [quantity, setQuantity] = useState(1)
-
-  const increaseQuantity = () => setQuantity(quantity + 1)
-  const decreaseQuantity = () => {
-    if (quantity > 1) setQuantity(quantity - 1)
-  }
-
+const DetailSection = (props) => {
   return (
     <section className='py-2'>
+      <div className='d-flex justify-content-end me-4'>
+        <button style={{ marginLeft: '150px' }} className='btn btn-danger'>
+          {!props.isBack && (
+            <a
+              style={{ fontFamily: 'monospace', fontSize: '20px' }}
+              className='nav-link'
+              href='/'
+            >
+              <svg
+                style={{ marginRight: '20px' }}
+                xmlns='http://www.w3.org/2000/svg'
+                width='25'
+                height='25'
+                fill='currentColor'
+                class='bi bi-arrow-left-square-fill'
+                viewBox='0 0 16 16'
+              >
+                <path d='M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1' />
+              </svg>
+              Back
+            </a>
+          )}
+        </button>
+      </div>
       <div className='container px-4 px-lg-5 my-5'>
         <div id='detailWrap' className='row gx-4 align-items-center'>
           <div className='col-md-6'>
-            <img
-              className='card-img-top'
-              src={img10}
-              alt='Mexrop'
-            />
+            <img className='card-img-top' src={img10} alt='Mexrop' />
           </div>
           <div className='col-md-6'>
             <div className='small mb-1'></div>
@@ -41,7 +54,7 @@ const DetailSection = () => {
                 className='btn btn-outline-dark flex-shrink-0'
                 type='button'
               >
-                 <a
+                <a
                   className='bi-cart-fill me-1 list-group-item'
                   href='https://t.me/napishupopoje'
                 >
