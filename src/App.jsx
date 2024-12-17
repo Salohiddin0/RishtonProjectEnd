@@ -65,18 +65,68 @@ function Base () {
           >
             {/* Sample Product Card */}
 
-            <Card img={img1} title='Chinni' link='/card1'></Card>
-            <Card img={img2} link='/card2'></Card>
-            <Card img={img3} link='/card3'></Card>
-            <Card img={img4} link='/card4'></Card>
-            <Card img={img5} link='/card5'></Card>
-            <Card img={img6} link='/card6'></Card>
-            <Card img={img7} link='/card7'></Card>
-            <Card img={img8} link='/card8'></Card>
-            <Card img={img9} link='/card9'></Card>
-            <Card img={img10} link='/card10'></Card>
-            <Card img={img11} link='/card11'></Card>
-            <Card img={img12} link='/card12'></Card>
+            <Card
+              img={img1}
+              title='Мехроп 42 см 34.000 сум'
+              link='/card1'
+            ></Card>
+            <Card
+              img={img2}
+              title='Мехроп 38 см 32.000 сум'
+              link='/card2'
+            ></Card>
+            <Card
+              img={img3}
+              title='Мехроп 32 см 30.000 сум'
+              link='/card3'
+            ></Card>
+            <Card
+              img={img4}
+              title='Мехроп 34 см 32.000 сум'
+              link='/card4'
+            ></Card>
+            <Card
+              img={img5}
+              title='Мехроп 28 см 21.000 сум'
+              link='/card5'
+            ></Card>
+            <Card
+              img={img6}
+              title='Мехроп 26 см 20.000 сум'
+              link='/card6'
+            ></Card>
+            <Card
+              img={img7}
+              title='Мехроп 22 см 18.000 сум'
+              link='/card7'
+            ></Card>
+            <Card
+              img={img8}
+              title='Мехроп 20 см 15.000 сум'
+              link='/card8'
+            ></Card>
+            <Card
+              img={img9}
+              title='Мехроп 10 см 15.000 сум'
+              link='/card9'
+            ></Card>
+            <Card
+              img={img10}
+              title='Мехроп 8 лт, 32.000 сум'
+              link='/card10'
+            ></Card>
+            <Card
+              img={img11}
+              title='Коса арабский 10.000 сум 
+Мехроп'
+              link='/card11'
+            ></Card>
+            <Card
+              img={img12}
+              title='Коса боль 11.000 сум 
+Мехроп'
+              link='/card12'
+            ></Card>
           </div>
         </div>
       </section>
@@ -106,8 +156,8 @@ function Card (props) {
         />
         <div className='card-body p-4'>
           <div className='text-center'>
-            {/* <h5 className='fw-bolder'>{props.title}</h5> */}
-            <h5 className='fw-bolder'>Мехроп 42 см 34.000 сум</h5>
+            <h5 className='fw-bolder'>{props.title}</h5>
+            {/* <h5 className='fw-bolder'>Мехроп 42 см 34.000 сум</h5> */}
           </div>
         </div>
         <div className='card-footer p-4 pt-0 border-top-0 bg-transparent'>
