@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-light'>
       <div className='container px-4 px-lg-5'>
-        <a style={{fontFamily: 'monospace', fontSize: '30px'}} className='navbar-brand' href='http://localhost:3000/'>
+        <a style={{fontFamily: 'monospace', fontSize: '29px'}} className='navbar-brand' href='http://localhost:3000/'>
           Usmanov Ceramics
         </a>
         <button
